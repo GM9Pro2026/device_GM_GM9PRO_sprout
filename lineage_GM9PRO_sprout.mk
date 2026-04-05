@@ -14,14 +14,11 @@
 # limitations under the License.
 # 
 
-$(call inherit-product, device/GM/GM9PRO_sprout/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Bootanimation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2160
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := GM
 PRODUCT_DEVICE := GM9PRO_sprout
