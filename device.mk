@@ -18,7 +18,7 @@
 $(call inherit-product, vendor/GM/GM9PRO_sprout/GM9PRO_sprout-vendor.mk)
 
 # Add common definitions for Qualcomm
-$(call inherit-product, hardware/qcom-caf/common/common.mk)
+# $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
